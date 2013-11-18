@@ -11,7 +11,6 @@ block('input')(
             var ctx = this.ctx, content = [{ elem: 'control' }];
             // NOTE: не вынесли в отдельные шаблоны ради оптимизации
             ctx.hint && content.unshift({ elem: 'hint', content: ctx.hint });
-            ctx.label && content.unshift({ elem: 'label', content: ctx.label });
             return content;
         },
         match(function() { return typeof this.ctx.content !== 'undefined' })(function() {

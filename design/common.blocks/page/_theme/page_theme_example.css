@@ -1,0 +1,8 @@
+.page_theme_example.page__body
+{
+    font: 13px/20px Arial, Helvetica, sans-serif;
+
+    padding: 20px;
+
+    background: #fff;
+}
