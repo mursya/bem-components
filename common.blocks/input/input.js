@@ -76,6 +76,10 @@ BEMDOM.decl('input', {
         return this.elem('control').attr('name');
     },
 
+    _tryToUpdateVal : function() {
+        this.setVal(this.elem('control').val());
+    },
+
     _onFocus : function() {
         this._focused = true;
         this.setMod('focused');
@@ -96,6 +100,9 @@ BEMDOM.decl('input', {
 }, {
     live : function() {
         this
+            .liveBindTo('control', 'input', function() {
+                this._tryToUpdateVal();
+            })
             .liveBindTo('control', 'focusin', function() {
                 this._onFocus();
             })
