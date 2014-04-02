@@ -1,0 +1,16 @@
+block('select').mod('type', 'radio')(
+    def().match(this._checkedOptions)(function() {
+        applyNext({ _checkedOption : this._checkedOptions[0] || this._firstOption });
+    }),
+
+    elem('button').content()(function() {
+        return [
+            { elem : 'text', content : this._checkedOption.text }
+            // TODO: with icons
+        ];
+    }),
+
+    elem('control').attrs()(function() {
+        return this.extend(applyNext(), { value : JSON.stringify(this._checkedOption.val) });
+    })
+)
