@@ -28,7 +28,13 @@
     "git-hooks": "0.0.6",
     "svgo": "0.4.1",
     "bower-npm-install": "~0.5.4",
-    "istanbul": "^0.2.7"
+    "istanbul": "^0.2.7",
+    "enb": "0.10.0",
+    "enb-modules": "0.1.1",
+    "enb-diverse-js": "0.1.0",
+    "enb-bemxjst": "1.1.1",
+    "enb-roole": "0.2.0",
+    "enb-autoprefixer": "0.1.0"
   },
   "optionalDependencies": {},
   "private": true,
