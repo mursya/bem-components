@@ -29,12 +29,14 @@
     "svgo": "0.4.1",
     "bower-npm-install": "~0.5.4",
     "istanbul": "^0.2.7",
+    "vow": "0.4.3",
     "enb": "0.10.0",
     "enb-modules": "0.1.1",
     "enb-diverse-js": "0.1.0",
     "enb-bemxjst": "1.1.1",
     "enb-roole": "0.2.0",
-    "enb-autoprefixer": "0.1.0"
+    "enb-autoprefixer": "0.1.0",
+    "enb-pseudo-levels": "git://github.com/andrewblond/enb-pseudo-levels#63c66fa185c878eceb13a05beff66dc8216f4ace"
   },
   "optionalDependencies": {},
   "private": true,
