@@ -22,6 +22,7 @@ module.exports = function(config) {
             [require('enb-roole/techs/css-roole'), { target : '?.noprefix.css' }],
             [require('enb-diverse-js/techs/browser-js')],
             [require('enb-bemxjst/techs/bemhtml-old'), { devMode : false }],
+            [require('enb-bh/techs/bh-server')],
             [require('enb-bemxjst/techs/bemhtml-old'), {
                 target : '?.browser.bemhtml.js',
                 filesTraget : '?.bemhtml.files',
@@ -35,11 +36,12 @@ module.exports = function(config) {
                 source : '?.pre.js',
                 target : '?.js'
             }],
-            [require('enb/techs/html-from-bemjson')]
+            [require('enb/techs/html-from-bemjson')],
+            [require('enb/techs/html-from-bemjson'), { destTarget : '?.bh.html' }]
         ]);
 
         nodeConfig.addTargets([
-            '_?.css', '_?.js', '?.html'
+            '_?.css', '_?.js', '?.html', '?.bh.html'
         ]);
     });
 
