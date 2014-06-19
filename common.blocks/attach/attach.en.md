@@ -1,10 +1,10 @@
 # attach
 
-The **attach** block is used to send a file to a server.
+**attach** block is used to send a file to a server.
 
-The block is visually represented by:
+This block is visually represented by:
 
-* button (`__button` based on the [button](../button/) block) that opens a system window for a file download
+* button (`__button` based on [button](../button/) block) that opens a system window for a file download
 * deletion cross element (`__clear`)
 
 Block functionality does not support:
@@ -12,23 +12,23 @@ Block functionality does not support:
 * more than one file attaching
 * drag-and-drop
 
-Block **attach** provides native control functionality. The control is hidden. In MSIE8 block **attach** is rendered as native control `<input type="file">`.
+Block **attach** provides native control functionality. The control is hidden. In MSIE8 block **attach** is rendered as a native control `<input type="file">`.
 
 ## Block's modifiers
 
 ### Themes of a block
 `_theme`
 
-The block supports only the *simple* theme.
+The block supports only *simple* theme.
 
-If theme is not specified, the block applies only default values:
+If theme is not specified, only default values will be applied:
 
 * Theme of a button: native representation of a button by the browser.
 * Localization: en
 * Button's message text (`__button`): "Choose file"
 * Text message rendered with no file selected (`__no-file`): "no file selected"
 
-Following example demonstrates this:
+For demonstration of such see the following example:
 
 ```bemjson
     {
@@ -51,7 +51,7 @@ Following example demonstrates this:
 `_disabled_true`
 
 * disabled
-If block is disabled a file selection button becomes unavailable for user's manipulations.
+If block is disabled, a file selection button becomes unavailable for user's manipulations.
 
 The button is active by default.
 
@@ -101,7 +101,7 @@ If a theme *simple* is not declared, the button's text "Choose file" is used by 
 
 A native control of file attaching.
 
-It is rendered by BEMHTML and BH template engines as a native control of file attaching with attributes: `<input class="file-name" type="file">`.
+It is rendered by BEMHTML and BH template engines as a native control of a file attaching with attributes: `<input class="file-name" type="file">`.
 
 ### __no-file
 
@@ -111,9 +111,9 @@ If a theme *simple* is not declared, the text message "no file selected" is used
 
 ### __file
 
-A container for a attached file information.
+A container for an attached file information.
 
-It consists of the following block's elements:
+It consists of the following elements of the block:
 
 * `__text`
 * `__clear`
